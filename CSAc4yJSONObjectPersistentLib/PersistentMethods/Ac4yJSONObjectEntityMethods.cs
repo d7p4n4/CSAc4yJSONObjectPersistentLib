@@ -47,7 +47,7 @@ namespace d7p4n4Namespace.EFMethods.Class
             return a;
         }
 		
-		public Ac4yJSONObject LoadXmlById(int id)
+		public Ac4yJSONObject LoadJSONById(int id)
         {
 			Ac4yJSONObject a = null;
 
@@ -83,7 +83,7 @@ namespace d7p4n4Namespace.EFMethods.Class
             }
 	}
 	
-	    public void SaveWithXml(Ac4yJSONObject _Ac4yJSONObject)
+	    public void SaveWithJSON(Ac4yJSONObject _Ac4yJSONObject)
         {
             string xml = "";
 

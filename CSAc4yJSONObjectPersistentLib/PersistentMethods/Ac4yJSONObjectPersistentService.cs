@@ -44,12 +44,12 @@ namespace d7p4n4Namespace.PersistentService.Class
             return response;
         }
 
-        public GetObjectResponse GetFirstWithXML(int id)
+        public GetObjectResponse GetFirstWithJSON(int id)
         {
             var response = new GetObjectResponse();
             try
             {
-                response.Object = (_Ac4yJSONObjectEntityMethods.LoadXmlById(id));
+                response.Object = (_Ac4yJSONObjectEntityMethods.LoadJSONById(id));
                 response.Result = new Ac4yProcessResult() { Code = "1" };
             }
             catch (Exception exception)
@@ -60,12 +60,12 @@ namespace d7p4n4Namespace.PersistentService.Class
             return response;
 		}
 		
-		public GetObjectResponse SaveWithXml(Ac4yJSONObject _Ac4yJSONObject)
+		public GetObjectResponse SaveWithJSON(Ac4yJSONObject _Ac4yJSONObject)
         {
             var response = new GetObjectResponse();
             try
             {
-                _Ac4yJSONObjectEntityMethods.SaveWithXml(_Ac4yJSONObject);
+                _Ac4yJSONObjectEntityMethods.SaveWithJSON(_Ac4yJSONObject);
                 response.Result = new Ac4yProcessResult() { Code = "1" };
             }
             catch (Exception exception)
